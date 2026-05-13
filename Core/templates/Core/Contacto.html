@@ -1,0 +1,26 @@
+{% extends "Core/base.html" %}
+{% load static %}
+
+{# Página de contacto - información para comunicarse #}
+
+{% block title %}Contacto{% endblock %}
+
+{% block hero_bg %}{% static 'Core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block hero_content %}
+    <h1>Contacto</h1>
+    <p>Asesoría</p>
+{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Descripción de contacto -->
+            <p>Mediante estos contactos puedes localizarme.</p>
+            <br>
+            <!-- Datos de contacto -->
+            <p><strong>Teléfono:</strong> 0991404943</p>
+            <p><strong>Correo:</strong> Jvillamarin6214@utm.edu.ec</p>
+        </div>
+    </div>
+{% endblock %}

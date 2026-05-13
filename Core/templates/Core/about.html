@@ -1,0 +1,30 @@
+{% extends "Core/base.html" %}
+{% load static %}
+
+{# Página acerca de - biografía personal #}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block hero_bg %}{% static 'Core/img/about-bg.jpg' %}{% endblock %}
+
+{% block hero_content %}
+    <h1>Jordan Villamarin</h1>
+    <p>Estudiante de TI</p>
+{% endblock %}
+
+{% block content %}
+    <!-- Contenido Principal -->
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <!-- Foto de perfil -->
+            <img class="img-fluid rounded-circle"
+                 src="{% static 'Core/img/avatar.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <!-- Información personal -->
+            <h2>Jordan Villamarin</h2>
+            <p>Nacido en Quito</p>
+            <p>Estudio en la facultad de Ciencias Informáticas, en la carrera de TI.</p>
+        </div>
+    </div>
+{% endblock %}
